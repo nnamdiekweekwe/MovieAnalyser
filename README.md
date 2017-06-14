@@ -12,9 +12,9 @@ Currently, there are only two browser visualised results. The user can see all t
 
 These are the full list of routes:
 
-`/movies_released_by_year` - *BROWSER ACCESSIBLE*
+`/movies_released_by_year` - *Can be visualised in the browser*
 
-`/movies_belonging_to_a_genre` - *BROWSER ACCESSIBLE*
+`/movies_belonging_to_a_genre` - *Can be visualised in the browser*
 
 `/show_average_rating_movies/<string:title_of_film>`
 
