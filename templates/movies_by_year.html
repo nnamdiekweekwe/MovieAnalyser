@@ -1,0 +1,26 @@
+{% include 'head_and_nav.html' %}
+<body>
+<div class="col-md-12">
+    <h1 class="text-center">Hi there!</h1>
+    <p class="text-center"> Below are all the films released in {{ desired_year }}.</p>
+</div>
+<div class="col-md-12">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Number: </th>
+            <th>Movie Titles: </th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for row in results %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ row.split(":", 1)[1][1:-2] }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+{% include 'footer.html' %}

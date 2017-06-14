@@ -1,0 +1,34 @@
+{% include 'head_and_nav.html' %}
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Welcome to the Movie Analyser!</h1>
+                <h4 class="spacing">Below are two forms with which you can view all movies released by year and movies belonging to a genre.</h4>
+            </div>
+        </div>
+        <div class="row spacing">
+            <div class="col-md-6">
+                <form method="post" action="movies_belonging_to_a_genre">
+                    <div class="form-group">
+                        <label for="moviesBelongingToGenre">Movies by Genre:</label>
+                        <input type="text" name="genre" class="form-control" id="moviesBelongingToGenre" placeholder="Movies Belonging to a genre">
+                        <button type="submit" class="btn btn-success" style="margin-top:30px;">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <form method="post" action="movies_released_by_year">
+                    <div class="form-group">
+                        <label for="moviesReleasedByYear">Show all movies released by year:</label>
+                        <input type="text" name="year" class="form-control" id="moviesReleasedByYear" placeholder="Year">
+                        <button type="submit" class="btn btn-success" style="margin-top:30px;">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+</body>
