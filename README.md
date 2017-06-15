@@ -50,7 +50,7 @@ You can run this file by submitting it to your local `spark-submit` script
 in your local spark installation. 
 
 If on a mac, this should be in:
-the `/usr/local/spark folder` (by default).
+the `/usr/local/spark` folder (by default).
 
 The main file to run is `Flask.py`
 
